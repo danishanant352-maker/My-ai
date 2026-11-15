@@ -111,9 +111,9 @@ if prompt:
                 st.session_state.messages.append({"role": "assistant", "content": reply})
                 
                 # अगर ऑटो-स्पीकर ऑन है, तो जवाब को तुरंत बोलकर सुनाएं
-                if voice_enabled:
+                if voice_enabled: 
                     speak_text(reply)
                     
             except Exception as e:
-                st.error(f"कुछ गड़बड़ हो गई: {e}")
+                st.error(f"कुछ गड़बड़ हो गई: {e}") 
                 
